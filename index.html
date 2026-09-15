@@ -3,186 +3,1016 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Метро СПб — карта метро Санкт-Петербурга офлайн</title>
-    <meta name="description" content="Умная интерактивная карта метро Санкт-Петербурга. Работает офлайн, весит всего 10 МБ. Маршруты, станции, достопримечательности и карта города.">
-    <meta name="keywords" content="метро спб, карта метро санкт-петербург, метро питер, схема метро спб, маршруты метро спб">
-    <link rel="icon" href="icon.png" type="image/png">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Метро СПб и Электрички Москвы — приложения для Android</title>
+
+    <meta name="description"
+          content="Официальный сайт приложений «Санкт-Петербург карта метро» и «Электрички Москва Карта и Расписание» для Android. Карты, маршруты и расписание транспорта.">
+
+    <meta name="keywords"
+          content="метро спб, карта метро санкт-петербург, электрички москва, расписание электричек, карта мцд, мцк, московская область">
+
+    <meta name="theme-color" content="#000000">
+
+    <!-- Иконка сайта во вкладке браузера -->
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="shortcut icon" type="image/png" href="icon.png">
+
+<link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
 
-    <!-- Hero секция -->
-    <section class="hero">
+<header class="site-header">
+    <div class="container header-inner">
+
+        <a class="brand" href="#top">
+            <i class="fas fa-mobile-screen-button"></i>
+            <span>Мои приложения</span>
+        </a>
+
+        <nav class="app-nav" aria-label="Навигация по приложениям">
+
+            <a href="#metro">
+                <i class="fas fa-subway"></i>
+                Метро СПб
+            </a>
+
+            <a href="#trains">
+                <i class="fas fa-train"></i>
+                Электрички Москвы
+            </a>
+
+        </nav>
+
+    </div>
+</header>
+
+
+<main id="top">
+
+    <!-- =====================================================
+         ОБЩАЯ ВСТУПИТЕЛЬНАЯ СЕКЦИЯ
+         ===================================================== -->
+
+    <section class="intro">
+
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
+
+            <span class="eyebrow">
+                Android-приложения
+            </span>
+
+            <h1>
+                Удобный транспорт
+                <span class="gradient-text">в вашем телефоне</span>
+            </h1>
+
+            <p>
+                Карты, маршруты и полезная информация для поездок
+                по Санкт-Петербургу, Москве и Московской области.
+            </p>
+
+            <div class="intro-links">
+
+                <a href="#metro" class="pill-link">
+                    <i class="fas fa-subway"></i>
+                    Санкт-Петербург
+                </a>
+
+                <a href="#trains" class="pill-link trains-link">
+                    <i class="fas fa-train"></i>
+                    Москва и область
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ПРИЛОЖЕНИЕ 1
+         САНКТ-ПЕТЕРБУРГ КАРТА МЕТРО
+         ===================================================== -->
+
+    <article id="metro" class="app-section metro-theme">
+
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="container">
+
+                <div class="hero-centered">
+
                     <div class="badge">
-                        <i class="fas fa-subway"></i> Официальное приложение
+                        <i class="fas fa-subway"></i>
+                        Приложение для Android
                     </div>
-                    <h1>Санкт-Петербург<br><span class="gradient-text">Карта метро</span></h1>
-                    <p class="subtitle">Умная интерактивная карта метро, которая работает офлайн. Маршруты, станции, достопримечательности — всё в вашем телефоне.</p>
-                    
+
+                    <h2 class="app-title">
+                        Санкт-Петербург<br>
+                        <span class="gradient-text">
+                            Карта метро
+                        </span>
+                    </h2>
+
+                    <p class="subtitle">
+                        Умная интерактивная карта метро, которая работает
+                        офлайн. Маршруты, станции и достопримечательности —
+                        всё необходимое для поездок по Петербургу
+                        в вашем телефоне.
+                    </p>
+
                     <div class="features-hero">
+
                         <div class="feature-hero-item">
                             <i class="fas fa-wifi-slash"></i>
                             <span>Работает офлайн</span>
                         </div>
+
                         <div class="feature-hero-item">
                             <i class="fas fa-database"></i>
                             <span>Всего 10 МБ</span>
                         </div>
+
                         <div class="feature-hero-item">
                             <i class="fas fa-route"></i>
                             <span>Умные маршруты</span>
                         </div>
+
                     </div>
 
-                    <div class="store-buttons">
-                        <a href="https://play.google.com/store/apps/details?id=com.yerazh.metro_spb_gp" target="_blank" class="store-btn google">
+                    <div class="store-buttons center">
+
+                        <a href="https://play.google.com/store/apps/details?id=com.yerazh.metro_spb_gp"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="store-btn google">
+
                             <i class="fab fa-google-play"></i>
+
                             <div class="btn-text">
                                 <small>Доступно в</small>
                                 <span>Google Play</span>
                             </div>
+
                         </a>
+
                     </div>
-                    <p class="free-badge"><i class="fas fa-check-circle"></i> Полностью бесплатно · Без интернета · 10 МБ</p>
+
+                    <p class="free-badge">
+                        <i class="fas fa-check-circle"></i>
+                        Полностью бесплатно · Без интернета · 10 МБ
+                    </p>
+
                 </div>
-                <div class="hero-image">
-                    <div class="hero-screenshot">
-                        <img src="d.jpg" alt="Карта метро СПБ скриншот" onerror="this.parentElement.innerHTML='<div class=placeholder-img><i class=fas fa-subway></i><p>Скриншот приложения</p></div>'">
+
+            </div>
+
+        </section>
+
+
+        <!-- ВОЗМОЖНОСТИ -->
+
+        <section class="features">
+
+            <div class="container">
+
+                <h2>
+                    Всё метро Петербурга
+                    <span class="gradient-text">
+                        в вашем кармане
+                    </span>
+                </h2>
+
+                <div class="features-grid">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fas fa-map"></i>
+                        </div>
+
+                        <h3>Интерактивная схема</h3>
+
+                        <p>
+                            Чёткая, масштабируемая карта с цветными
+                            линиями, пересадками и вокзалами.
+                        </p>
+
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Секция возможностей -->
-    <section class="features">
-        <div class="container">
-            <h2>Всё метро Петербурга <span class="gradient-text">в вашем кармане</span></h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-map"></i></div>
-                    <h3>Интерактивная схема</h3>
-                    <p>Чёткая, масштабируемая карта с цветными линиями, пересадками и вокзалами.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-route"></i></div>
-                    <h3>Построение маршрутов</h3>
-                    <p>Оптимальный путь, время в пути и количество пересадок.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-info-circle"></i></div>
-                    <h3>Всё о станциях</h3>
-                    <p>Время работы, выходы, пересадки, интервалы движения поездов.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-landmark"></i></div>
-                    <h3>Что рядом</h3>
-                    <p>Достопримечательности Петербурга у каждой станции метро.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-search"></i></div>
-                    <h3>Удобный поиск</h3>
-                    <p>Мгновенно находите нужную станцию по названию.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-clock"></i></div>
-                    <h3>Актуальная информация</h3>
-                    <p>Временное закрытие станций отображается на карте.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Секция скриншотов -->
-    <section class="screenshots">
-        <div class="container">
-            <h2>Как это работает</h2>
-            <p class="section-subtitle">Просто. Быстро. Удобно.</p>
-            <div class="screenshots-grid">
-                <div class="screenshot-card">
-                    <img src="d1.jpg" alt="Скриншот 1" onerror="this.src='https://placehold.co/300x600/1a1a2a/5a5a7a?text=Скриншот+1'">
-                </div>
-                <div class="screenshot-card">
-                    <img src="d2.jpg" alt="Скриншот 2" onerror="this.src='https://placehold.co/300x600/1a1a2a/5a5a7a?text=Скриншот+2'">
-                </div>
-                <div class="screenshot-card">
-                    <img src="d3.jpg" alt="Скриншот 3" onerror="this.src='https://placehold.co/300x600/1a1a2a/5a5a7a?text=Скриншот+3'">
-                </div>
-                <div class="screenshot-card">
-                    <img src="d4.png" alt="Скриншот 4" onerror="this.src='https://placehold.co/300x600/1a1a2a/5a5a7a?text=Скриншот+4'">
-                </div>
-            </div>
-        </div>
-    </section>
+                    <div class="feature-card">
 
-    <!-- Блок с ключевыми преимуществами -->
-    <section class="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number">10 <span>МБ</span></div>
-                    <div class="stat-label">Вес приложения</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number"><i class="fas fa-subway"></i> 72+</div>
-                    <div class="stat-label">Станции метро</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number"><i class="fas fa-train"></i> 5</div>
-                    <div class="stat-label">Линий метро</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number"><i class="fas fa-globe"></i> 100%</div>
-                    <div class="stat-label">Офлайн работа</div>
-                </div>
-            </div>
-        </div>
-    </section>
+                        <div class="feature-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
 
-    <!-- CTA секция -->
-    <section class="cta">
-        <div class="container">
-            <h2>Готовы исследовать Петербург?</h2>
-            <p>Установите карту метро СПб и путешествуйте без стресса</p>
-            <div class="store-buttons center">
-                <a href="https://play.google.com/store/apps/details?id=com.yerazh.metro_spb_gp" target="_blank" class="store-btn google large">
-                    <i class="fab fa-google-play"></i>
-                    <div class="btn-text">
-                        <small>Доступно в</small>
-                        <span>Google Play</span>
+                        <h3>Построение маршрутов</h3>
+
+                        <p>
+                            Оптимальный путь, время в пути
+                            и количество пересадок.
+                        </p>
+
                     </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+
+                        <h3>Всё о станциях</h3>
+
+                        <p>
+                            Время работы, выходы, пересадки
+                            и полезная информация о станциях.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+
+                        <h3>Что рядом</h3>
+
+                        <p>
+                            Достопримечательности Петербурга
+                            рядом со станциями метро.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+
+                        <h3>Удобный поиск</h3>
+
+                        <p>
+                            Мгновенно находите нужную станцию
+                            по названию.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+
+                        <h3>Актуальная информация</h3>
+
+                        <p>
+                            Важная информация о работе станций
+                            отображается прямо на карте.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- СКРИНШОТЫ -->
+
+        <section class="screenshots">
+
+            <div class="container">
+
+                <h2>Приложение в действии</h2>
+
+                <p class="section-subtitle">
+                    Просто. Быстро. Удобно.
+                </p>
+
+                <div class="screenshots-grid">
+
+                    <div class="screenshot-card">
+                        <img src="metro-spb-1.jpg"
+                             alt="Санкт-Петербург карта метро — интерактивная карта"
+                             loading="lazy">
+                    </div>
+
+                    <div class="screenshot-card">
+                        <img src="metro-spb-2.jpg"
+                             alt="Санкт-Петербург карта метро — маршруты"
+                             loading="lazy">
+                    </div>
+
+                    <div class="screenshot-card">
+                        <img src="metro-spb-3.jpg"
+                             alt="Санкт-Петербург карта метро — информация о станциях"
+                             loading="lazy">
+                    </div>
+
+                    <div class="screenshot-card">
+                        <img src="metro-spb-4.jpg"
+                             alt="Санкт-Петербург карта метро — возможности приложения"
+                             loading="lazy">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- СТАТИСТИКА -->
+
+        <section class="stats">
+
+            <div class="container">
+
+                <div class="stats-grid">
+
+                    <div class="stat-item">
+
+                        <div class="stat-number">
+                            10 <span>МБ</span>
+                        </div>
+
+                        <div class="stat-label">
+                            Вес приложения
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-item">
+
+                        <div class="stat-number">
+                            <i class="fas fa-subway"></i>
+                            72+
+                        </div>
+
+                        <div class="stat-label">
+                            Станции метро
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-item">
+
+                        <div class="stat-number">
+                            <i class="fas fa-train"></i>
+                            5
+                        </div>
+
+                        <div class="stat-label">
+                            Линий метро
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-item">
+
+                        <div class="stat-number">
+                            <i class="fas fa-globe"></i>
+                            100%
+                        </div>
+
+                        <div class="stat-label">
+                            Офлайн работа
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+
+        <section class="cta">
+
+            <div class="container">
+
+                <h2>
+                    Готовы исследовать Петербург?
+                </h2>
+
+                <p>
+                    Установите карту метро СПб
+                    и путешествуйте по городу удобнее.
+                </p>
+
+                <div class="store-buttons center">
+
+                    <a href="https://play.google.com/store/apps/details?id=com.yerazh.metro_spb_gp"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="store-btn google large">
+
+                        <i class="fab fa-google-play"></i>
+
+                        <div class="btn-text">
+                            <small>Доступно в</small>
+                            <span>Google Play</span>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+                <div class="privacy-inline">
+
+                    <a href="https://teletype.in/@digitalcourseshub/O3YMB77AOM0"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <i class="fas fa-shield-halved"></i>
+                        Политика конфиденциальности
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </article>
+
+
+    <!-- =====================================================
+         РАЗДЕЛИТЕЛЬ
+         ===================================================== -->
+
+    <div class="app-divider">
+
+        <div class="container">
+            <span>
+                Второе приложение
+            </span>
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         ПРИЛОЖЕНИЕ 2
+         ЭЛЕКТРИЧКИ МОСКВА КАРТА И РАСПИСАНИЕ
+         ===================================================== -->
+
+    <article id="trains"
+             class="app-section trains-theme">
+
+
+        <!-- HERO -->
+
+        <section class="hero trains-hero">
+
+            <div class="container">
+
+                <div class="hero-centered">
+
+                    <div class="badge">
+                        <i class="fas fa-train"></i>
+                        Приложение для Android
+                    </div>
+
+                    <h2 class="app-title">
+
+                        Электрички Москва<br>
+
+                        <span class="gradient-text">
+                            Карта и Расписание
+                        </span>
+
+                    </h2>
+
+                    <p class="subtitle">
+
+                        Актуальное расписание электричек, МЦК и МЦД,
+                        подробная карта движения и быстрый поиск маршрутов
+                        по Москве и Московской области —
+                        всё необходимое для поездок в одном приложении.
+
+                    </p>
+
+
+                    <div class="features-hero">
+
+                        <div class="feature-hero-item">
+                            <i class="fas fa-calendar-days"></i>
+                            <span>Расписание на любую дату</span>
+                        </div>
+
+                        <div class="feature-hero-item">
+                            <i class="fas fa-map-location-dot"></i>
+                            <span>Карта направлений</span>
+                        </div>
+
+                        <div class="feature-hero-item">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Расписание в PDF</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="store-buttons center">
+
+                        <!--
+                            После публикации приложения в Google Play
+                            замените # на ссылку приложения,
+                            удалите класс disabled-store,
+                            удалите aria-disabled и onclick,
+                            а "Скоро в" замените на "Доступно в".
+                        -->
+
+                        <a href="#"
+                           class="store-btn google disabled-store"
+                           aria-disabled="true"
+                           onclick="return false;">
+
+                            <i class="fab fa-google-play"></i>
+
+                            <div class="btn-text">
+                                <small>Скоро в</small>
+                                <span>Google Play</span>
+                            </div>
+
+                        </a>
+
+                    </div>
+
+
+                    <p class="free-badge">
+
+                        <i class="fas fa-circle-info"></i>
+                        Расписание · Карта · Маршруты · PDF
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ВОЗМОЖНОСТИ -->
+
+        <section class="features">
+
+            <div class="container">
+
+                <h2>
+
+                    Всё для поездок по Москве
+
+                    <span class="gradient-text">
+                        и области
+                    </span>
+
+                </h2>
+
+
+                <div class="features-grid">
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+
+                        <h3>
+                            Актуальное расписание
+                        </h3>
+
+                        <p>
+                            Время отправления и прибытия, время в пути,
+                            стоимость разового билета, номер поезда
+                            и тип подвижного состава.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fas fa-map"></i>
+                        </div>
+
+                        <h3>
+                            Подробная карта
+                        </h3>
+
+                        <p>
+                            Направления электричек, станции, пересадки,
+                            МЦК и все линии Московских центральных диаметров.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fas fa-magnifying-glass-location"></i>
+                        </div>
+
+                        <h3>
+                            Быстрый поиск маршрута
+                        </h3>
+
+                        <p>
+                            Выберите станции отправления и назначения
+                            и получите список доступных поездов
+                            с информацией о маршруте.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+
+                        <h3>
+                            Расписание на любую дату
+                        </h3>
+
+                        <p>
+                            Планируйте поездки заранее
+                            и просматривайте расписание
+                            на нужный день.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+
+                        <h3>
+                            Расписание в PDF
+                        </h3>
+
+                        <p>
+                            Сформируйте PDF с расписанием, сохраните
+                            его на телефон или отправьте друзьям,
+                            родным и коллегам.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fas fa-train-subway"></i>
+                        </div>
+
+                        <h3>
+                            МЦД, МЦК и электрички
+                        </h3>
+
+                        <p>
+                            Пригородные поезда, экспрессы,
+                            аэроэкспрессы и современные
+                            поезда «Иволга».
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- НАПРАВЛЕНИЯ -->
+
+        <section class="network-section">
+
+            <div class="container">
+
+                <h2>
+
+                    Основные направления
+
+                    <span class="gradient-text">
+                        в одном месте
+                    </span>
+
+                </h2>
+
+
+                <p class="section-subtitle">
+
+                    Белорусское, Горьковское, Казанское, Киевское,
+                    Кольцевое, Курское, Ленинградское, Павелецкое,
+                    Рижское, Савёловское и Ярославское направления.
+
+                </p>
+
+
+                <div class="network-chips">
+
+                    <span>МЦД-1 · D1</span>
+
+                    <span>МЦД-2 · D2</span>
+
+                    <span>МЦД-3 · D3</span>
+
+                    <span>МЦД-4 · D4</span>
+
+                    <span>МЦК</span>
+
+                    <span>Аэроэкспресс</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- СКРИНШОТЫ -->
+
+        <section class="screenshots">
+
+            <div class="container">
+
+                <h2>
+                    Приложение в действии
+                </h2>
+
+                <p class="section-subtitle">
+                    Расписание, маршруты и карта железнодорожной сети
+                    всегда под рукой.
+                </p>
+
+
+                <div class="screenshots-grid">
+
+                    <div class="screenshot-card">
+                        <img src="elka-msc-1.jpg"
+                             alt="Электрички Москва — расписание поездов"
+                             loading="lazy">
+                    </div>
+
+                    <div class="screenshot-card">
+                        <img src="elka-msc-2.jpg"
+                             alt="Электрички Москва — карта движения"
+                             loading="lazy">
+                    </div>
+
+                    <div class="screenshot-card">
+                        <img src="elka-msc-3.jpg"
+                             alt="Электрички Москва — поиск маршрута"
+                             loading="lazy">
+                    </div>
+
+                    <div class="screenshot-card">
+                        <img src="elka-msc-4.jpg"
+                             alt="Электрички Москва — информация о поездах"
+                             loading="lazy">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- СТАТИСТИКА -->
+
+        <section class="stats">
+
+            <div class="container">
+
+                <div class="stats-grid">
+
+                    <div class="stat-item">
+
+                        <div class="stat-number">
+                            <i class="fas fa-route"></i>
+                            10+
+                        </div>
+
+                        <div class="stat-label">
+                            Основных направлений
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-item">
+
+                        <div class="stat-number">
+                            D1–D4
+                        </div>
+
+                        <div class="stat-label">
+                            Все линии МЦД
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-item">
+
+                        <div class="stat-number">
+                            <i class="fas fa-train-subway"></i>
+                            МЦК
+                        </div>
+
+                        <div class="stat-label">
+                            Московское центральное кольцо
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-item">
+
+                        <div class="stat-number">
+                            <i class="fas fa-file-pdf"></i>
+                            PDF
+                        </div>
+
+                        <div class="stat-label">
+                            Сохранение расписания
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+
+        <section class="cta">
+
+            <div class="container">
+
+                <h2>
+                    Москва и область — всё для поездок
+                </h2>
+
+                <p>
+                    Быстро находите расписание, выбирайте маршрут
+                    и пользуйтесь удобной картой железнодорожной сети
+                    Москвы и Московской области.
+                </p>
+
+
+                <div class="store-buttons center">
+
+                    <!--
+                        После публикации приложения в Google Play
+                        замените # на ссылку приложения,
+                        удалите класс disabled-store,
+                        удалите aria-disabled и onclick,
+                        а "Скоро в" замените на "Доступно в".
+                    -->
+
+                    <a href="#"
+                       class="store-btn google large disabled-store"
+                       aria-disabled="true"
+                       onclick="return false;">
+
+                        <i class="fab fa-google-play"></i>
+
+                        <div class="btn-text">
+                            <small>Скоро в</small>
+                            <span>Google Play</span>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+                <div class="privacy-inline">
+
+                    <a href="https://teletype.in/@digitalcourseshub/GuZv5M2jyqL"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <i class="fas fa-shield-halved"></i>
+                        Политика конфиденциальности
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </article>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <div class="footer-logo">
+
+                <div class="logo-wrapper">
+
+                    <i class="fas fa-mobile-screen-button footer-logo-icon"></i>
+
+                    <h3>
+                        Мобильные приложения
+                    </h3>
+
+                </div>
+
+                <p>
+                    Полезные транспортные приложения для Android
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#metro">
+                    Метро СПб
                 </a>
-            </div>
-            <p class="install-note"><i class="fas fa-download"></i> Всего 10 МБ — установка за секунды</p>
-        </div>
-    </section>
 
-    <!-- Футер -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <div class="logo-wrapper">
-                        <img src="icon.png" alt="Логотип" class="footer-icon" onerror="this.style.display='none'">
-                        <h3>Метро СПб</h3>
-                    </div>
-                    <p>Карта метро Санкт-Петербурга</p>
-                </div>
-                <div class="footer-links">
-                    <a href="https://teletype.in/@digitalcourseshub/O3YMB77AOM0" target="_blank">Политика конфиденциальности</a>
-                </div>
-                <div class="copyright">
-                    <p>© 2026 · Все права защищены</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+                <a href="#trains">
+                    Электрички Москвы
+                </a>
 
-    <script src="script.js"></script>
+            </div>
+
+
+            <div class="copyright">
+
+                <p>
+                    © 2026 · Все права защищены
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
