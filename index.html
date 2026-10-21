@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-    <title>Метро СПб и Электрички Москвы — приложения для Android</title>
+    <title>Метро СПб и Умная Камера — приложения для Android</title>
 
     <meta name="description"
-          content="Официальный сайт приложений «Санкт-Петербург карта метро» и «Электрички Москва Карта и Расписание» для Android. Карты, маршруты и расписание транспорта.">
+          content="Официальный сайт Android-приложений «Санкт-Петербург Карта метро» и «Умная Камера». Карта метро Петербурга и распознавание объектов с помощью камеры.">
 
     <meta name="keywords"
-          content="метро спб, карта метро санкт-петербург, электрички москва, расписание электричек, карта мцд, мцк, московская область">
+          content="метро спб, карта метро санкт-петербург, умная камера, распознавание объектов, компьютерное зрение, Android">
 
     <meta name="theme-color" content="#000000">
 
@@ -44,9 +44,9 @@
                 Метро СПб
             </a>
 
-            <a href="#trains">
-                <i class="fas fa-train"></i>
-                Электрички Москвы
+            <a href="#camera">
+                <i class="fas fa-camera"></i>
+                Умная Камера
             </a>
 
         </nav>
@@ -70,13 +70,13 @@
             </span>
 
             <h1>
-                Удобный транспорт
-                <span class="gradient-text">в вашем телефоне</span>
+                Полезные приложения
+                <span class="gradient-text">для вашего Android</span>
             </h1>
 
             <p>
-                Карты, маршруты и полезная информация для поездок
-                по Санкт-Петербургу, Москве и Московской области.
+                Удобная карта метро Санкт-Петербурга и умная камера
+                для распознавания объектов вокруг вас.
             </p>
 
             <div class="intro-links">
@@ -86,9 +86,9 @@
                     Санкт-Петербург
                 </a>
 
-                <a href="#trains" class="pill-link trains-link">
-                    <i class="fas fa-train"></i>
-                    Москва и область
+                <a href="#camera" class="pill-link camera-link">
+                    <i class="fas fa-camera"></i>
+                    Умная Камера
                 </a>
 
             </div>
@@ -483,473 +483,193 @@
 
 
     <!-- =====================================================
-         ПРИЛОЖЕНИЕ 2
-         ЭЛЕКТРИЧКИ МОСКВА КАРТА И РАСПИСАНИЕ
+         ПРИЛОЖЕНИЕ 2 — УМНАЯ КАМЕРА
          ===================================================== -->
 
-    <article id="trains"
-             class="app-section trains-theme">
+    <article id="camera" class="app-section camera-theme">
 
-
-        <!-- HERO -->
-
-        <section class="hero trains-hero">
-
+        <!-- ГЛАВНЫЙ БЛОК -->
+        <section class="hero camera-hero">
             <div class="container">
-
                 <div class="hero-centered">
-
                     <div class="badge">
-                        <i class="fas fa-train"></i>
+                        <i class="fas fa-camera"></i>
                         Приложение для Android
                     </div>
 
                     <h2 class="app-title">
-
-                        Электрички Москва<br>
-
-                        <span class="gradient-text">
-                            Карта и Расписание
-                        </span>
-
+                        Умная <span class="gradient-text">Камера</span>
                     </h2>
 
                     <p class="subtitle">
-
-                        Актуальное расписание электричек, МЦК и МЦД,
-                        подробная карта движения и быстрый поиск маршрутов
-                        по Москве и Московской области —
-                        всё необходимое для поездок в одном приложении.
-
+                        Наведите камеру смартфона на окружающие предметы —
+                        приложение поможет распознать объекты в реальном времени
+                        с помощью технологий машинного обучения.
+                        Изображения обрабатываются непосредственно на устройстве.
                     </p>
-
 
                     <div class="features-hero">
-
                         <div class="feature-hero-item">
-                            <i class="fas fa-calendar-days"></i>
-                            <span>Расписание на любую дату</span>
+                            <i class="fas fa-eye"></i>
+                            <span>Распознавание объектов</span>
                         </div>
-
                         <div class="feature-hero-item">
-                            <i class="fas fa-map-location-dot"></i>
-                            <span>Карта направлений</span>
+                            <i class="fas fa-bolt"></i>
+                            <span>В реальном времени</span>
                         </div>
-
                         <div class="feature-hero-item">
-                            <i class="fas fa-file-pdf"></i>
-                            <span>Расписание в PDF</span>
+                            <i class="fas fa-mobile-screen"></i>
+                            <span>Обработка на устройстве</span>
                         </div>
-
                     </div>
-
 
                     <div class="store-buttons center">
-
-                        <!--
-                            После публикации приложения в Google Play
-                            замените # на ссылку приложения,
-                            удалите класс disabled-store,
-                            удалите aria-disabled и onclick,
-                            а "Скоро в" замените на "Доступно в".
-                        -->
-
-                        <a href="#"
-                           class="store-btn google disabled-store"
-                           aria-disabled="true"
-                           onclick="return false;">
-
+                        <!-- После публикации замените этот блок на активную ссылку Google Play. -->
+                        <span class="store-btn google disabled-store" aria-label="Скоро в Google Play">
                             <i class="fab fa-google-play"></i>
-
-                            <div class="btn-text">
+                            <span class="btn-text">
                                 <small>Скоро в</small>
                                 <span>Google Play</span>
-                            </div>
-
-                        </a>
-
+                            </span>
+                        </span>
                     </div>
-
 
                     <p class="free-badge">
-
                         <i class="fas fa-circle-info"></i>
-                        Расписание · Карта · Маршруты · PDF
-
+                        Камера · Распознавание · Локальная обработка
                     </p>
-
                 </div>
-
             </div>
-
         </section>
-
 
         <!-- ВОЗМОЖНОСТИ -->
-
         <section class="features">
-
             <div class="container">
-
-                <h2>
-
-                    Всё для поездок по Москве
-
-                    <span class="gradient-text">
-                        и области
-                    </span>
-
-                </h2>
-
-
+                <h2>Узнавайте мир <span class="gradient-text">через камеру</span></h2>
                 <div class="features-grid">
-
-
                     <div class="feature-card">
-
-                        <div class="feature-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-
-                        <h3>
-                            Актуальное расписание
-                        </h3>
-
-                        <p>
-                            Время отправления и прибытия, время в пути,
-                            стоимость разового билета, номер поезда
-                            и тип подвижного состава.
-                        </p>
-
+                        <div class="feature-icon"><i class="fas fa-camera"></i></div>
+                        <h3>Распознавание объектов</h3>
+                        <p>Направьте камеру на предмет, чтобы приложение определило, что находится в кадре.</p>
                     </div>
-
-
                     <div class="feature-card">
-
-                        <div class="feature-icon">
-                            <i class="fas fa-map"></i>
-                        </div>
-
-                        <h3>
-                            Подробная карта
-                        </h3>
-
-                        <p>
-                            Направления электричек, станции, пересадки,
-                            МЦК и все линии Московских центральных диаметров.
-                        </p>
-
+                        <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                        <h3>В реальном времени</h3>
+                        <p>Получайте результаты распознавания прямо во время работы камеры.</p>
                     </div>
-
-
                     <div class="feature-card">
-
-                        <div class="feature-icon">
-                            <i class="fas fa-magnifying-glass-location"></i>
-                        </div>
-
-                        <h3>
-                            Быстрый поиск маршрута
-                        </h3>
-
-                        <p>
-                            Выберите станции отправления и назначения
-                            и получите список доступных поездов
-                            с информацией о маршруте.
-                        </p>
-
+                        <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                        <h3>Машинное обучение</h3>
+                        <p>Приложение использует MediaPipe для анализа изображения с камеры.</p>
                     </div>
-
-
                     <div class="feature-card">
-
-                        <div class="feature-icon">
-                            <i class="fas fa-calendar-check"></i>
-                        </div>
-
-                        <h3>
-                            Расписание на любую дату
-                        </h3>
-
-                        <p>
-                            Планируйте поездки заранее
-                            и просматривайте расписание
-                            на нужный день.
-                        </p>
-
+                        <div class="feature-icon"><i class="fas fa-mobile-screen-button"></i></div>
+                        <h3>Локальная обработка</h3>
+                        <p>Кадры анализируются на смартфоне и не отправляются на сервер для распознавания.</p>
                     </div>
-
-
                     <div class="feature-card">
-
-                        <div class="feature-icon">
-                            <i class="fas fa-file-pdf"></i>
-                        </div>
-
-                        <h3>
-                            Расписание в PDF
-                        </h3>
-
-                        <p>
-                            Сформируйте PDF с расписанием, сохраните
-                            его на телефон или отправьте друзьям,
-                            родным и коллегам.
-                        </p>
-
+                        <div class="feature-icon"><i class="fas fa-hand-pointer"></i></div>
+                        <h3>Простое управление</h3>
+                        <p>Откройте приложение, нажмите «Начать» и наведите камеру на объект.</p>
                     </div>
-
-
                     <div class="feature-card">
-
-                        <div class="feature-icon">
-                            <i class="fas fa-train-subway"></i>
-                        </div>
-
-                        <h3>
-                            МЦД, МЦК и электрички
-                        </h3>
-
-                        <p>
-                            Пригородные поезда, экспрессы,
-                            аэроэкспрессы и современные
-                            поезда «Иволга».
-                        </p>
-
+                        <div class="feature-icon"><i class="fas fa-user-slash"></i></div>
+                        <h3>Без регистрации</h3>
+                        <p>Для использования распознавания не нужно создавать аккаунт или входить в профиль.</p>
                     </div>
-
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- НАПРАВЛЕНИЯ -->
-
+        <!-- КАК ЭТО РАБОТАЕТ -->
         <section class="network-section">
-
             <div class="container">
-
-                <h2>
-
-                    Основные направления
-
-                    <span class="gradient-text">
-                        в одном месте
-                    </span>
-
-                </h2>
-
-
+                <h2>Три простых <span class="gradient-text">шага</span></h2>
                 <p class="section-subtitle">
-
-                    Белорусское, Горьковское, Казанское, Киевское,
-                    Кольцевое, Курское, Ленинградское, Павелецкое,
-                    Рижское, Савёловское и Ярославское направления.
-
+                    Начните распознавать объекты с помощью камеры смартфона.
                 </p>
-
-
                 <div class="network-chips">
-
-                    <span>МЦД-1 · D1</span>
-
-                    <span>МЦД-2 · D2</span>
-
-                    <span>МЦД-3 · D3</span>
-
-                    <span>МЦД-4 · D4</span>
-
-                    <span>МЦК</span>
-
-                    <span>Аэроэкспресс</span>
-
+                    <span>1. Откройте приложение</span>
+                    <span>2. Нажмите «Начать»</span>
+                    <span>3. Наведите камеру</span>
                 </div>
-
             </div>
-
         </section>
-
 
         <!-- СКРИНШОТЫ -->
-
         <section class="screenshots">
-
             <div class="container">
-
-                <h2>
-                    Приложение в действии
-                </h2>
-
+                <h2>Умная Камера <span class="gradient-text">в действии</span></h2>
                 <p class="section-subtitle">
-                    Расписание, маршруты и карта железнодорожной сети
-                    всегда под рукой.
+                    Простой интерфейс и распознавание объектов прямо на экране смартфона.
                 </p>
-
-
                 <div class="screenshots-grid">
-
                     <div class="screenshot-card">
-                        <img src="elka-msc-1.jpg"
-                             alt="Электрички Москва — расписание поездов"
-                             loading="lazy">
+                        <img src="image-detection-1.png" alt="Умная Камера — экран приложения" loading="lazy">
                     </div>
-
                     <div class="screenshot-card">
-                        <img src="elka-msc-2.jpg"
-                             alt="Электрички Москва — карта движения"
-                             loading="lazy">
+                        <img src="image-detection-2.png" alt="Умная Камера — работа с камерой" loading="lazy">
                     </div>
-
                     <div class="screenshot-card">
-                        <img src="elka-msc-3.jpg"
-                             alt="Электрички Москва — поиск маршрута"
-                             loading="lazy">
+                        <img src="image-detection-3.png" alt="Умная Камера — распознавание объектов" loading="lazy">
                     </div>
-
                     <div class="screenshot-card">
-                        <img src="elka-msc-4.jpg"
-                             alt="Электрички Москва — информация о поездах"
-                             loading="lazy">
+                        <img src="image-detection-4.png" alt="Умная Камера — возможности приложения" loading="lazy">
                     </div>
-
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- СТАТИСТИКА -->
-
+        <!-- ПОКАЗАТЕЛИ -->
         <section class="stats">
-
             <div class="container">
-
                 <div class="stats-grid">
-
                     <div class="stat-item">
-
-                        <div class="stat-number">
-                            <i class="fas fa-route"></i>
-                            10+
-                        </div>
-
-                        <div class="stat-label">
-                            Основных направлений
-                        </div>
-
+                        <div class="stat-number"><i class="fas fa-eye"></i></div>
+                        <div class="stat-label">Распознавание объектов</div>
                     </div>
-
-
                     <div class="stat-item">
-
-                        <div class="stat-number">
-                            D1–D4
-                        </div>
-
-                        <div class="stat-label">
-                            Все линии МЦД
-                        </div>
-
+                        <div class="stat-number"><i class="fas fa-bolt"></i></div>
+                        <div class="stat-label">В реальном времени</div>
                     </div>
-
-
                     <div class="stat-item">
-
-                        <div class="stat-number">
-                            <i class="fas fa-train-subway"></i>
-                            МЦК
-                        </div>
-
-                        <div class="stat-label">
-                            Московское центральное кольцо
-                        </div>
-
+                        <div class="stat-number"><i class="fas fa-mobile-screen"></i></div>
+                        <div class="stat-label">Локальная обработка</div>
                     </div>
-
-
                     <div class="stat-item">
-
-                        <div class="stat-number">
-                            <i class="fas fa-file-pdf"></i>
-                            PDF
-                        </div>
-
-                        <div class="stat-label">
-                            Сохранение расписания
-                        </div>
-
+                        <div class="stat-number"><i class="fas fa-user-check"></i></div>
+                        <div class="stat-label">Без регистрации</div>
                     </div>
-
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- CTA -->
-
+        <!-- GOOGLE PLAY И КОНФИДЕНЦИАЛЬНОСТЬ -->
         <section class="cta">
-
             <div class="container">
-
-                <h2>
-                    Москва и область — всё для поездок
-                </h2>
-
+                <h2>Посмотрите на мир по-новому</h2>
                 <p>
-                    Быстро находите расписание, выбирайте маршрут
-                    и пользуйтесь удобной картой железнодорожной сети
-                    Москвы и Московской области.
+                    «Умная Камера» поможет распознавать окружающие объекты.
+                    Приложение готовится к публикации в Google Play.
                 </p>
-
-
                 <div class="store-buttons center">
-
-                    <!--
-                        После публикации приложения в Google Play
-                        замените # на ссылку приложения,
-                        удалите класс disabled-store,
-                        удалите aria-disabled и onclick,
-                        а "Скоро в" замените на "Доступно в".
-                    -->
-
-                    <a href="#"
-                       class="store-btn google large disabled-store"
-                       aria-disabled="true"
-                       onclick="return false;">
-
+                    <span class="store-btn google large disabled-store" aria-label="Скоро в Google Play">
                         <i class="fab fa-google-play"></i>
-
-                        <div class="btn-text">
+                        <span class="btn-text">
                             <small>Скоро в</small>
                             <span>Google Play</span>
-                        </div>
-
-                    </a>
-
+                        </span>
+                    </span>
                 </div>
-
-
                 <div class="privacy-inline">
-
-                    <a href="https://teletype.in/@digitalcourseshub/GuZv5M2jyqL"
-                       target="_blank"
-                       rel="noopener noreferrer">
-
+                    <a href="https://teletype.in/@digitalcourseshub/SpwwWOu6qT7"
+                       target="_blank" rel="noopener noreferrer">
                         <i class="fas fa-shield-halved"></i>
                         Политика конфиденциальности
-
                     </a>
-
                 </div>
-
             </div>
-
         </section>
-
     </article>
 
 </main>
@@ -978,7 +698,7 @@
                 </div>
 
                 <p>
-                    Полезные транспортные приложения для Android
+                    Полезные приложения для Android
                 </p>
 
             </div>
@@ -990,8 +710,8 @@
                     Метро СПб
                 </a>
 
-                <a href="#trains">
-                    Электрички Москвы
+                <a href="#camera">
+                    Умная Камера
                 </a>
 
             </div>

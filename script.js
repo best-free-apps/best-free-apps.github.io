@@ -108,14 +108,14 @@ if (!prefersReducedMotion && 'IntersectionObserver' in window) {
 // =========================================================
 
 const metroSection = document.querySelector('#metro');
-const trainsSection = document.querySelector('#trains');
+const cameraSection = document.querySelector('#camera');
 
 const metroNavLink = document.querySelector(
     '.app-nav a[href="#metro"]'
 );
 
-const trainsNavLink = document.querySelector(
-    '.app-nav a[href="#trains"]'
+const cameraNavLink = document.querySelector(
+    '.app-nav a[href="#camera"]'
 );
 
 
@@ -123,9 +123,9 @@ function updateNavigation() {
 
     if (
         !metroSection ||
-        !trainsSection ||
+        !cameraSection ||
         !metroNavLink ||
-        !trainsNavLink
+        !cameraNavLink
     ) {
         return;
     }
@@ -136,7 +136,7 @@ function updateNavigation() {
 
 
     const metroTop = metroSection.offsetTop;
-    const trainsTop = trainsSection.offsetTop;
+    const cameraTop = cameraSection.offsetTop;
 
 
     // Пока пользователь находится во вступительном блоке,
@@ -145,18 +145,18 @@ function updateNavigation() {
     if (scrollPosition < metroTop) {
 
         metroNavLink.classList.remove('active');
-        trainsNavLink.classList.remove('active');
+        cameraNavLink.classList.remove('active');
 
         return;
     }
 
 
-    // Раздел электричек Москвы
+    // Раздел «Умная Камера»
 
-    if (scrollPosition >= trainsTop) {
+    if (scrollPosition >= cameraTop) {
 
         metroNavLink.classList.remove('active');
-        trainsNavLink.classList.add('active');
+        cameraNavLink.classList.add('active');
 
         return;
     }
@@ -165,7 +165,7 @@ function updateNavigation() {
     // Раздел метро Санкт-Петербурга
 
     metroNavLink.classList.add('active');
-    trainsNavLink.classList.remove('active');
+    cameraNavLink.classList.remove('active');
 
 }
 

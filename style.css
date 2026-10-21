@@ -129,7 +129,7 @@ a {
     border-color: rgba(77, 184, 255, 0.25);
 }
 
-/* Активная Москва */
+/* Активная Умная Камера */
 
 .app-nav a:last-child.active {
     color: #ffe3c5;
@@ -274,7 +274,7 @@ a {
     border-color: rgba(77, 184, 255, 0.5);
 }
 
-.pill-link.trains-link {
+.pill-link.camera-link {
     color: #ffe1c1;
 
     background: rgba(255, 159, 67, 0.08);
@@ -282,7 +282,7 @@ a {
     border-color: rgba(255, 159, 67, 0.25);
 }
 
-.pill-link.trains-link:hover {
+.pill-link.camera-link:hover {
     background: rgba(255, 159, 67, 0.15);
 
     border-color: rgba(255, 159, 67, 0.5);
@@ -876,12 +876,12 @@ a {
    ЭЛЕКТРИЧКИ МОСКВЫ — ЦВЕТОВАЯ ТЕМА
    ========================================================= */
 
-.trains-theme {
+.camera-theme {
     --train-orange: #ff9f43;
     --train-yellow: #ffd166;
 }
 
-.trains-theme .gradient-text {
+.camera-theme .gradient-text {
     background: linear-gradient(
         135deg,
         var(--train-orange),
@@ -894,7 +894,7 @@ a {
     color: transparent;
 }
 
-.trains-hero::before {
+.camera-hero::before {
     background:
         radial-gradient(
             circle at 50% 50%,
@@ -903,7 +903,7 @@ a {
         );
 }
 
-.trains-theme .badge {
+.camera-theme .badge {
     color: var(--train-orange);
 
     background: rgba(255, 159, 67, 0.10);
@@ -911,15 +911,15 @@ a {
     border-color: rgba(255, 159, 67, 0.23);
 }
 
-.trains-theme .feature-hero-item i {
+.camera-theme .feature-hero-item i {
     color: var(--train-orange);
 }
 
-.trains-theme .free-badge {
+.camera-theme .free-badge {
     color: var(--train-orange);
 }
 
-.trains-theme .feature-icon {
+.camera-theme .feature-icon {
     background: linear-gradient(
         135deg,
         rgba(255, 159, 67, 0.14),
@@ -927,30 +927,30 @@ a {
     );
 }
 
-.trains-theme .feature-icon i {
+.camera-theme .feature-icon i {
     color: var(--train-orange);
 }
 
-.trains-theme .feature-card:hover {
+.camera-theme .feature-card:hover {
     border-color: var(--train-orange);
 }
 
-.trains-theme .screenshot-card:hover {
+.camera-theme .screenshot-card:hover {
     border-color: var(--train-orange);
 
     box-shadow:
         0 22px 45px -18px rgba(255, 159, 67, 0.18);
 }
 
-.trains-theme .stat-number {
+.camera-theme .stat-number {
     color: var(--train-orange);
 }
 
-.trains-theme .privacy-inline a:hover {
+.camera-theme .privacy-inline a:hover {
     color: var(--train-orange);
 }
 
-.trains-theme .cta {
+.camera-theme .cta {
     background:
         radial-gradient(
             circle at 50% 100%,
